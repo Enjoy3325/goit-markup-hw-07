@@ -109,9 +109,9 @@ img {
   font-size: 26px;
   line-height: 1.19;
 
-  width: 145px;
   text-decoration: none;
   margin-right: 93px;
+
   transition: color 250ms var(--time-distribution);
 }
 
@@ -723,10 +723,14 @@ a {
 
   background: var(--fluoric-background-color);
 }
-.footer-nav {
+.logo--descent {
+  margin-bottom: 20px;
+}
+.horizontally {
+  display: flex;
   align-items: baseline;
 }
-.div-nav {
+.footer__nav {
   width: 231px;
 }
 .logo__text--inverse {
@@ -738,7 +742,7 @@ a {
   color: var(--accent-color);
 }
 
-.contacts-footer {
+.footer__list {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -746,57 +750,41 @@ a {
 
   text-align: left;
   justify-content: left;
+  text-decoration: none;
 }
-.mailto-footer {
-  color: var(--footer-contacts-color);
+.footer__list:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer__list--white {
+  color: var(--white-color);
+}
 
-  transition: color 250ms var(--time-distribution);
-}
-.mailto-footer:hover,
-.mailto-footer:focus {
-  color: var(--accent-color);
-}
-.tel-footer {
+.footer__link {
   color: var(--footer-contacts-color);
   text-decoration: none;
 
   transition: color 250ms var(--time-distribution);
 }
-.tel-footer:hover,
-.tel-footer:focus {
+.footer__link:hover,
+.footer__link:focus {
   color: var(--accent-color);
 }
 
 .maps {
   color: var(--white-color);
-  margin-bottom: 9px;
+}
 
-  transition: color 250ms var(--time-distribution);
-}
-.maps:hover,
-.maps:focus {
-  color: var(--accent-color);
-}
-.li-maps {
-  margin-bottom: 9px;
-}
-.li-mail {
-  margin-bottom: 9px;
-}
-.ul-footer {
+.footer__contacts {
   padding: 0;
   margin: 0;
 }
-.footer-nav {
-  display: flex;
-}
+
 /* ---------------------------------------------------------------ПРИСОИДЕНЯЙТЕСЬ ФУТЕР---------------------------------------------*/
-.footer-join {
+.footer__content {
   display: inline-block;
-  margin-left: 70px;
+  margin-left: auto;
 }
-.join-p {
+.footer__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -807,37 +795,17 @@ a {
 
   color: var(--white-color);
 }
-.network-join {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 0;
-
-  border-radius: 50%;
-  fill: var(--white-color);
+.net__link--color {
   background-color: rgba(255, 255, 255, 0.1);
-  outline: none;
-  transition: background-color 250ms var(--time-distribution), fill 250ms var(--time-distribution);
 }
-.network-join:hover,
-.network-join:focus {
-  background-color: var(--accent-color);
-  fill: var(--white-color);
-}
+
 /* -----------------------------------------------------ПОДПИСАТЬСЯ--------------------------------- */
-.subscription {
-  display: block;
-  margin-right: auto;
-  margin-left: 93px;
-}
-.mailing {
+
+.subscription__label {
   display: flex;
 }
 
-.email {
+.subscription__input {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -848,6 +816,7 @@ a {
 
   margin-right: 12px;
   padding: 15px 15px;
+  cursor: pointer;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -856,8 +825,12 @@ a {
   color: var(--white-color);
   background-color: transparent;
 }
-.subscription-icon {
+
+.subscription__icon {
   margin-left: 10px;
+}
+.subscription__label:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /* --------------------------------------------------------------ГЕРОЙ 2 СТРАНИЦА----------------------------------- */
