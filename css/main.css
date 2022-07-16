@@ -291,6 +291,17 @@ body {
   align-items: center;
 }
 
+.chapter {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
 .logo {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
@@ -539,17 +550,6 @@ body {
 .advantage__text {
   line-height: 1.71;
   color: #757575;
-}
-
-.chapter {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 50px;
 }
 
 .services__list {
