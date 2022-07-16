@@ -11,39 +11,40 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &__container {
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    color: $fluoric-background-color;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  /* ------------------------------------------------------------ВЕРХНЯЯ ЛИНИЯ---------------------------------------------- */
+
+  &__heading {
+    color: $white-color;
+    display: flex;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-top: 0px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
-.hero__container {
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
-  color: $fluoric-background-color;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-/* ------------------------------------------------------------ВЕРХНЯЯ ЛИНИЯ---------------------------------------------- */
-
-.hero__heading {
-  color: $white-color;
-  display: flex;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  max-width: 696px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  justify-content: center;
-  margin-top: 0px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-.title-list h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  color: $title-text-color;
-}
+// .title-list h3 {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   color: $title-text-color;
+// }
 
 /* ---------------------------------------------------------------КНОПКА ЗАКАЗАТЬ УСЛУГУ------------------------------------------------ */
 .button {
@@ -72,9 +73,9 @@
   margin: auto;
   min-width: 200px;
   transition: background 250ms $time-distribution;
-}
 
-.button:hover,
-.button:focus {
-  background: $hover-button-color;
+  &:hover,
+  &:focus {
+    background: $hover-button-color;
+  }
 }
