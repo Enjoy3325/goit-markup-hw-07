@@ -1,33 +1,38 @@
-.clients__list {
-  display: flex;
-  padding: 0;
-  margin: 0 auto;
+.client {
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
 
-  align-items: center;
-}
+    align-items: center;
+  }
 
-.client__item:not(:last-child) {
-  margin-right: 30px;
-}
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.client__link {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  fill: $icon-fill;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  fill: $icon-fill;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  outline: none;
+  &__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    color: $icon-fill;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-  transition: border 250ms $time-distribution, fill 250ms $time-distribution;
-}
-/* ---------------------------------------------------------------ХОВЕР И ФОКУС ИКОНОК КЛИЕНТОВ------------------------------------------------ */
-.client__link:hover,
-.client__link:focus {
-  fill: $accent-color;
-  border: 1px solid $accent-color;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    outline: none;
+
+    transition: border 250ms $time-distribution, fill 250ms $time-distribution;
+  }
+  /* ---------------------------------------------------------------ХОВЕР И ФОКУС ИКОНОК КЛИЕНТОВ------------------------------------------------ */
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+  &__icon {
+    fill: currentColor;
+  }
 }

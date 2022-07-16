@@ -595,7 +595,6 @@ body {
   align-items: center;
   background-color: #f5f4fa;
 }
-
 .employees__info {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -603,14 +602,6 @@ body {
   justify-content: center;
   background-color: #ffffff;
 }
-
-.flip-card {
-  width: 100%;
-  height: 100%;
-  perspective: 1000px;
-  border: 1 px solid #f1f1f1;
-}
-
 .employees__list {
   display: flex;
   margin: 0 auto;
@@ -618,7 +609,6 @@ body {
   justify-content: center;
   text-align: center;
 }
-
 .employees__item {
   width: 270px;
   margin: 0;
@@ -628,11 +618,9 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .employees__item:not(:last-child) {
   margin-right: 30px;
 }
-
 .employees__developer {
   color: #212121;
   font-weight: 500;
@@ -641,7 +629,6 @@ body {
   margin: 0;
   padding-bottom: 10px;
 }
-
 .employees__position {
   line-height: 1.19;
   font-size: 16px;
@@ -657,7 +644,6 @@ body {
   margin: 0;
   align-items: center;
 }
-
 .net__item {
   display: inline-block;
   justify-content: center;
@@ -665,11 +651,9 @@ body {
   align-items: center;
   padding: 0;
 }
-
 .net__item:not(:last-child) {
   margin-right: 10px;
 }
-
 .net__link {
   display: flex;
   width: 44px;
@@ -683,44 +667,42 @@ body {
   outline: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.net__link:hover,
-.net__link:focus {
+.net__link:hover, .net__link:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
 
-.clients__list {
+.client {
+  /* ---------------------------------------------------------------ХОВЕР И ФОКУС ИКОНОК КЛИЕНТОВ------------------------------------------------ */
+}
+.client__list {
   display: flex;
   padding: 0;
   margin: 0 auto;
   align-items: center;
 }
-
 .client__item:not(:last-child) {
   margin-right: 30px;
 }
-
 .client__link {
   display: flex;
   width: 170px;
   height: 92px;
-  fill: #afb1b8;
+  color: #afb1b8;
   justify-content: center;
   align-items: center;
   text-align: center;
-  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* ---------------------------------------------------------------ХОВЕР И ФОКУС ИКОНОК КЛИЕНТОВ------------------------------------------------ */
-.client__link:hover,
-.client__link:focus {
-  fill: #2196f3;
+.client__link:hover, .client__link:focus {
+  color: #2196f3;
   border: 1px solid #2196f3;
+}
+.client__icon {
+  fill: currentColor;
 }
 
 .logo__descent {
