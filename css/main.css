@@ -831,6 +831,9 @@ body {
   align-items: center;
   padding: 0;
 }
+.net__item:not(:last-child) {
+  magirn-right: 10px;
+}
 .net__link--color {
   display: flex;
   width: 44px;

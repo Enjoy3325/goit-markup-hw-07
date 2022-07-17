@@ -142,10 +142,10 @@
     align-items: center;
     padding: 0;
   }
-  // &__item:not(:last-child) {
-  //   // magirn-right: 10px;
+  &__item:not(:last-child) {
+    magirn-right: 10px;
   }
-  
+
   &__link--color {
     display: flex;
     width: 44px;
