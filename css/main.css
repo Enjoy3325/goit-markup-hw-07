@@ -682,26 +682,6 @@ body {
   fill: #ffffff;
 }
 
-.net__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #ffffff;
-  fill: #afb1b8;
-  outline: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1 px solid #f1f1f1;
-}
-.net__link .net__link:hover,
-.net__link .net__link:focus {
-  background-color: #2196f3;
-  fill: #ffffff;
-}
-
 .client {
   /* ---------------------------------------------------------------ХОВЕР И ФОКУС ИКОНОК КЛИЕНТОВ------------------------------------------------ */
 }
